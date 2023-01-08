@@ -1,0 +1,17 @@
+{
+  "name": "svelte-jsoneditor-standalone",
+  "version": "0.0.1",
+  "description": "standalone version of svelte-jsoneditor for use in R as htmlwidget",
+  "main": "index.js",
+  "scripts": {
+    "esbuild-base": "esbuild index.js --minify --format=iife --global-name=JSONEditor --bundle --outfile=jsoneditor.min.js --sourcemap --target=chrome58,firefox57,safari11,edge16"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.16.15"
+  },
+  "dependencies": {
+    "vanilla-jsoneditor": "^0.11.8"
+  }
+}
